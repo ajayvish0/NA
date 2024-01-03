@@ -21,6 +21,9 @@ app.use(express.static("public"));
 app.get("/", async function(req,res){
     res.render("h");
 })
+app.get("/h", async function(req,res){
+    res.render("h");
+})
 
 app.post("/",async function(req,res){
     res.render("success");
